@@ -1,0 +1,66 @@
+
+patients:
+    type: pandas.CSVDataset
+    filepath: data/01_raw/patients.csv
+
+patient_gender:
+    type: pandas.CSVDataset
+    filepath: data/01_raw/patient_gender.csv
+
+symptoms:
+    type: pandas.CSVDataset
+    filepath: data/01_raw/symptoms.csv
+
+medications:
+    type: pandas.CSVDataset
+    filepath: data/01_raw/medications.csv
+
+conditions:
+    type: pandas.ExcelDataset
+    filepath: data/01_raw/conditions.xlsx
+    
+encounters:
+    type: pandas.ParquetDataset
+    filepath: data/01_raw/encounters.parquet
+
+preprocessed_patients:
+    type: pandas.CSVDataset
+    filepath: data/02_intermediate/preprocessed_patients.csv
+
+preprocessed_patient_gender:
+    type: pandas.CSVDataset
+    filepath: data/02_intermediate/preprocessed_patient_gender.csv
+
+preprocessed_symptoms:
+    type: pandas.CSVDataset
+    filepath: data/02_intermediate/preprocessed_symptoms.csv
+
+preprocessed_medications:
+    type: pandas.CSVDataset
+    filepath: data/02_intermediate/preprocessed_medications.csv
+
+preprocessed_encounters:
+    type: pandas.CSVDataset
+    filepath: data/02_intermediate/preprocessed_encounters.csv
+
+preprocessed_conditions:
+    type: pandas.CSVDataset
+    filepath: data/02_intermediate/preprocessed_conditions.csv
+
+patients_table:
+    type: pandas.CSVDataset
+    filepath: data/03_primary/patients_table.csv
+
+patient_medications_table:
+    type: pandas.CSVDataset
+    filepath: data/03_primary/patient_medications_table.csv
+
+patient_symptoms_medications_master_table:
+    type: pandas.CSVDataset
+    filepath: data/03_primary/patient_symptoms_medications_master_table.csv
+
+conditions_encounters_table:
+    type: pandas.CSVDataset
+    filepath: data/03_primary/conditions_encounters_table.csv
+
+
