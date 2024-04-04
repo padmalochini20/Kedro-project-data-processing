@@ -15,24 +15,16 @@ In order to get the best out of the template:
 * Don't commit data to your repository
 * Don't commit any credentials or your local configuration to your repository. Keep all your credentials and local configuration in `conf/local/`
 
-
-## How to install dependencies
-
-Declare any dependencies in `requirements.txt` for `pip` installation.
-
-To install them, run:
-
-```
-pip install -r requirements.txt
-```
-
-## How to run your Kedro pipeline
-
-You can run your Kedro project with:
-
-```
-kedro run
-```
+## Steps to run this kedro project
+* Create a new conda environment
+`conda create --name kedro-environment python=3.10.6 -y`
+* Install kedro in the environment
+`conda install -c conda-forge kedro`                   
+* Install the dependencies
+`pip install -r requirements.txt`
+* Run Kedro
+`kedro run`
+  
 
 ## How to test your Kedro project
 
